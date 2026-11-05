@@ -1,0 +1,106 @@
+:root{
+    --primary-color: #007bff; 
+    --primary-hover: #0056b3;
+  --dark-header: #1a252f;
+  --dark-nav: #2c3e50;
+  --dark-sub-header: #34495e;
+  --bg-body: #f4f6f9;
+  --bg-card: #ffffff;
+  --bg-search: #e9ecef;
+  --bg-placeholder: #e2e8f0;
+  --text-primary: #333333;
+  --text-muted: #4a5568;
+  --text-light: #ffffff;
+  --text-placeholder: #64748b;
+  --text-price: #d9534f;
+  --border-color: #dddddd;
+  --border-table: #cccccc;
+  --border-placeholder: #cbd5e1;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--bg-body);
+    font-family: Arial, sans-serif;
+    color: var(--text-primary);
+    padding: 20px;
+}
+h1{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+form{
+    background-color: var(--bg-card);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.info label{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.info input,.info select ,.info textarea{
+    padding: 8px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+.info input:focus,.info select:focus ,.info textarea:focus{
+    border-color: var(--primary-color);
+    outline: none;
+}
+::placeholder {
+    color: var(--text-placeholder);
+  }
+.lab{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+}
+.sex{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+.rmq{
+    grid-column: 1/-1;
+}
+.btn{
+    color: var(--text-light);
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn2{
+    grid-column: 1/-1;
+}
+.btn:hover {
+    background-color: var(--primary-hover);
+  }
+@media(min-width: 768px){
+    form{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
