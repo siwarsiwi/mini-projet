@@ -104,3 +104,98 @@ form{
         grid-template-columns: repeat(3,1fr);
     }
 }
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.card{
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+.glo{
+    margin: 0;
+}
+.glo dt{
+    font-weight: bold;
+    color: var(--primary-color); 
+    padding: 8px 12px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-left: 4px solid var(--primary-color);
+}
+.glo dd{
+    margin-left: 0;
+    padding: 5px 12px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+.tab{
+    width: 100%;
+    overflow-x: auto;
+}
+.plan{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: whitesmoke;
+}
+.lab{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+}
+.plan th,.plan td{
+    border: 1px solid var(--border-table);
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+.plan .main{
+    background-color: var(--dark-header);
+    color: var(--text-light);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 15px;
+}
+.plan .vide{
+    background-color: white;
+}
+.plan .side{
+    background-color: var(--dark-sub-header);
+    color: var(--text-light);
+    vertical-align: middle;
+}
+.plan .lab{
+    display: table-cell;
+    font-weight: normal;
+    color: var(--text-primary);
+    background-color: white;
+}
+.plan thead tr:nth-child(2) th {
+    background-color: var(--bg-search); 
+    font-weight: normal; 
+    color: var(--text-primary);
+}
+@media(max-width: 600px){
+    .plan{
+        font-size: 0.75rem;
+    }
+    .plan th,.plan td{
+        padding: 6px 3px;
+    }
+}
