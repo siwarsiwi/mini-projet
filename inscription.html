@@ -13,97 +13,117 @@
     />
   </head>
   <body>
-    <h1>Formulaire d'Inscription</h1>
-    <form action="" method="post" class="form">
-      <div class="info">
-        <label>Nom :</label>
-        <input type="text" id="nom" required />
+    <header class="header">
+      <div class="containerlogo">
+        <span class="logo">HTS</span>
+        <span class="title">High TechStore</span>
       </div>
-      <div class="info">
-        <label>Prénom :</label>
-        <input type="text" id="pre" required />
-      </div>
-      <div class="info">
-        <label>Date de naissance :</label>
-        <input type="date" id="dt" required />
-      </div>
-      <div class="info">
-        <label>Sexe :</label>
-        <div class="sex">
-          <label class="lab"
-            ><input
-              type="radio"
-              name="s"
-              id="s"
-              value="m"
-              required
-            />Masculin</label
-          >
-
-          <label class="lab"
-            ><input
-              type="radio"
-              name="s"
-              id="s"
-              value="f"
-              required
-            />Féminin</label
-          >
+      <nav class="nav">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="./pc.html">PC</a>
+        <a href="./inscription.html">Inscription</a>
+        <a href="./infos.html">Infos</a>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Formulaire d'Inscription</h1>
+      <form action="" method="post" class="form">
+        <div class="info">
+          <label>Nom :</label>
+          <input type="text" id="nom" required />
         </div>
-      </div>
-      <div class="info">
-        <label>Adresse :</label>
-        <input type="text" id="ad" required />
-      </div>
-      <div class="info">
-        <label>Code postal :</label>
-        <input type="text" id="cp" required />
-      </div>
-      <div class="info">
-        <label>Ville :</label>
-        <input type="text" id="ville" required />
-      </div>
-      <div class="info">
-        <label>Gouvernat :</label>
-        <select name="gov" id="gov" required>
-          <option value="">-- Choisir un gouvernorat --</option>
-          <option value="">Tunis</option>
-          <option value="">Ariana</option>
-          <option value="">Ben Arous</option>
-          <option value="">Sfax</option>
-          <option value="">Sousse</option>
-        </select>
-      </div>
-      <div class="info">
-        <label>Fonction :</label>
-        <input type="text" id="fct" />
-      </div>
-      <div class="info">
-        <label for="">Adresse E-mail :</label>
-        <input
-          type="email"
-          name="em"
-          id="em"
-          placeholder="nom@exemple.com"
-          required
-        />
-      </div>
-      <div class="info">
-        <label for="">Numéro de télephone :</label>
-        <input type="tel" name="tel" id="tel" required />
-      </div>
-      <div class="info rmq">
-        <label for="">Remarques :</label>
-        <textarea
-          name="rq"
-          id="rq"
-          rows="4"
-          placeholder="Vos remarques ou précisions..."
-        ></textarea>
-      </div>
-      <div>
-        <button type="submit" class="btn btn2">Valider Inscription</button>
-      </div>
-    </form>
+        <div class="info">
+          <label>Prénom :</label>
+          <input type="text" id="pre" required />
+        </div>
+        <div class="info">
+          <label>Date de naissance :</label>
+          <input type="date" id="dt" required />
+        </div>
+        <div class="info">
+          <label>Sexe :</label>
+          <div class="sex">
+            <label class="lab"
+              ><input
+                type="radio"
+                name="s"
+                id="s"
+                value="m"
+                required
+              />Masculin</label
+            >
+
+            <label class="lab"
+              ><input
+                type="radio"
+                name="s"
+                id="s"
+                value="f"
+                required
+              />Féminin</label
+            >
+          </div>
+        </div>
+        <div class="info">
+          <label>Adresse :</label>
+          <input type="text" id="ad" required />
+        </div>
+        <div class="info">
+          <label>Code postal :</label>
+          <input type="text" id="cp" required />
+        </div>
+        <div class="info">
+          <label>Ville :</label>
+          <input type="text" id="ville" required />
+        </div>
+        <div class="info">
+          <label>Gouvernat :</label>
+          <select name="gov" id="gov" required>
+            <option value="">-- Choisir un gouvernorat --</option>
+            <option value="">Tunis</option>
+            <option value="">Ariana</option>
+            <option value="">Ben Arous</option>
+            <option value="">Sfax</option>
+            <option value="">Sousse</option>
+          </select>
+        </div>
+        <div class="info">
+          <label>Fonction :</label>
+          <input type="text" id="fct" />
+        </div>
+        <div class="info">
+          <label for="">Adresse E-mail :</label>
+          <input
+            type="email"
+            name="em"
+            id="em"
+            placeholder="nom@exemple.com"
+            required
+          />
+        </div>
+        <div class="info">
+          <label for="">Numéro de télephone :</label>
+          <input type="tel" name="tel" id="tel" required />
+        </div>
+        <div class="info rmq">
+          <label for="">Remarques :</label>
+          <textarea
+            name="rq"
+            id="rq"
+            rows="4"
+            placeholder="Vos remarques ou précisions..."
+          ></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn btn2">Valider Inscription</button>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <p>
+        &copy; 2026 HighTechStore - Tous droits réservés | Auteur: Abid Siwar &
+        Hedhili Zeineb
+      </p>
+    </footer>
   </body>
 </html>
